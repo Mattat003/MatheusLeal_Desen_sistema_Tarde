@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 02 - Exemplo</title>
+</head>
+<body>
+    <form action="#">
+        <label for="CEP">CEP
+            <!--Pattern é utilizado para especificar e exigir um formato de escrita-->
+            <input name="cep" id="CEP" placeholder="12345-123" required pattern="\d{5}-?\d{3}" />
+        </label>
+        <br/>
+        <label for="Telefone">Telefone
+            <input name="telefone" id="Telefone" placeholder="12-12345-56789" required pattern="\d{2}-?\d{5}-?\d{4}" />
+        </label>
+        <br/>
+        <label>
+            <input type="submit"/>
+        </label>
+    </form>
+</body>
+</html>
