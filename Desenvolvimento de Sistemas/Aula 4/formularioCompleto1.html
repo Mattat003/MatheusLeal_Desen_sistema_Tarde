@@ -24,11 +24,70 @@
         <fieldset>
             <legend>Dados Pessoais</legend>
             <label>Nome:
-                <input name="nome" type="text" maxlength="25" size="10" placeholder="Nome" />
+                <input name="nome" type="text" maxlength="40" size="40" placeholder="Nome" />
             </label>
             <br/>
             <br/>
+            <label>Senha:
+                <input name="senha" type="password" maxlength="4" size="4" />
+            </label>
+            <br/>
+            <br/>
+            <label>Escolha os itens aplicáveis:</label>
+                <input name="video" type="checkbox" />Placa de Video
+                <input name="memoria" type="checkbox" />Memória
+                <input name="caixa" type="checkbox" />Caixa de Som
+            <br/>
+            <br/>
+            <label>Gênero:</label>
+            <label><input name="genero" type="radio" value="M" />Masculino</label>
+            <label><input name="genero" type="radio" value="F" />Feminino</label>
+            <label><input name="genero" type="radio" value="NB" />Não-Binario</label>
+            <br/>
+            <br/>
+            <label>Estado Cívil:</label>
+            <label><input name="civil" type="radio" value="S" />Solteiro</label>
+            <label><input name="civil" type="radio" value="C" />Casado</label>
+            <label><input name="civil" type="radio" value="D" />Divorciado</label>
+            <label><input name="civil" type="radio" value="V" />Viuvo</label>
+            <br/>
+            <br/>
+            <label>Estado - UF</label>
+            <select name="estado">
+                <option value="PR">Paraná</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="ES">Espírito Santo</option>
+            </select>
         </fieldset>
-
+        <fieldset>
+            <legend>Estado</legend>
+                <select name="frete">
+                    <option value="0">PR Frete Gratis</option>
+                    <option value="20">SP R$20,00</option>
+                    <option value="15">SC R$15,00</option>
+                </select>
+        </fieldset>
+        <br/>
+        <br/>
+        <fieldset>
+            <legend>Suco</legend>
+                <select>
+                    <optgroup label="fruta">
+                        <option>Laranja</option>
+                        <option>Abacaxi</option>
+                        <option>Morango</option>
+                    </optgroup>
+                    <optgroup label="mistura">
+                        <option>Água</option>
+                        <option>Leite</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+            <br/>
+            <br/>
+            <input type="submit" name="action" value="Enviar"/>
+            <input type="reset" name="action" value="Limpar"/>
+    </form>
 </body>
 </html>
